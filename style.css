@@ -1,0 +1,624 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --White: hsla(0, 0%, 100% ,0.7);
+    --Black: hsl(0, 0%, 0%);
+    --Dark-Gray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%);
+
+}
+/*........... Typography..........*/
+li,a{
+    text-decoration:none;
+    list-style:none;
+    color:var(--White);
+}
+
+/*........... HEADER..........*/
+
+body{
+    background-image:url('file:///home/chronos/u-6079a96e44dd214f025b844c78a5e0b511117869/MyFiles/loopstudios-landing-page-main/images/mobile/image-hero-mob.jpg') ;
+    background-repeat:no-repeat;
+    background-size:100% 550px;
+    width:100%;
+}
+header{
+    margin-bottom:8.5em;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1.5em 1.25em;
+    width:100%;
+
+}
+li{
+    display:inline-block;
+    
+}
+.logo img{
+    width:75%;
+}
+.list{
+    display:none;
+}
+.nav__bar{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+
+}
+.header__info{
+
+    font-family:'josefin sans',sans serif;
+    font-size:38px;
+    color:var(--White);
+    width:90%;
+    margin:1em 0 4em 0;
+    padding:0.5em;
+    border:2px solid var(--White);
+}
+.up{    
+    text-transform:uppercase;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    Font-size: 15px;
+    width:100%;
+}
+
+.hero{
+    position:relative;
+    height:400px;
+    margin-top:3em;
+    background-image:url('file:///home/chronos/u-6079a96e44dd214f025b844c78a5e0b511117869/MyFiles/loopstudios-landing-page-main/images/desktop/image-interactive-mob.jpg');
+    background-size:100% 80%;
+    background-repeat:no-repeat;
+    background-position:cover;
+    width:90%;
+}
+.hero__info h1{
+    text-align:center;
+    padding:1em 1.5em;
+}
+
+.hero__info{
+    position:absolute;
+    bottom:-150px;
+    width:100%;
+    background-color:white;
+    font-family:'josefin sans',serif;
+    text-align:center;
+}
+.main-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    Font-size: 15px;
+    width:100%;
+}
+.grid-header{
+    position:relative;
+    text-align:center;
+    margin-top:13em;
+    padding-bottom:2em;
+}
+.grid-header p{
+    font-family:'josefin sans', sans serif;
+    text-transform:uppercase;
+    font-weight:500;
+    font-size:2em;
+}
+.cta{
+    display:grid;
+    place-items:center;
+    font-family:'josefin sans', sans serif;
+    border:1px solid black;
+    font-size:1.4em;
+    font-weight:700;
+    text-align:center;
+    text-decoration:none;
+    text-transform:uppercase;
+    padding:.8rem 3.8rem;
+    color:black;
+    
+}
+.cta{
+    position:absolute;
+    top:80rem;
+    left:0;
+    right:0;
+}
+
+.grid {
+    display:grid;
+    grid-gap:20px;
+    width:90%;
+    height:28rem;
+    justify-content:space-around;
+    align-items:space-around;
+    grid-template-columns:1fr;
+    grid-template-rows:repeat(8,1fr);
+    grid-template-areas: "gd1"
+                         "gd2" 
+                         "gd3" 
+                         "gd4"
+                         "gd5" 
+                         "gd6" 
+                         "gd7"
+                         "gd8";
+    margin-bottom:20em;
+}
+
+.grid__item {
+    display:flex;
+    padding:0 0 20px 20px;
+    align-items:flex-end;
+    width:100%;
+    height:6.5em;
+    align-self:end;
+    text-transform:uppercase;
+    font-family:'josefin sans',sans-serif;
+    color:white;
+    font-size:20px;
+}
+h5{
+    z-index:100;
+}
+.gd1{
+    background:url('file:///home/chronos/u-6079a96e44dd214f025b844c78a5e0b511117869/MyFiles/loopstudios-landing-page-main/images/mobile/image-deep-earth-mob.jpg'),linear-gradient(90deg,var(--White),var(--White));
+    background-position:contain;
+    background-size:100%;
+    background-repeat:no-repeat;
+
+}
+
+.gd1:hover,.gd1 a{
+    background-blend-mode:overlay;
+    color:var(--black);
+
+}
+
+.gd2{
+    background-image:url('file:///home/chronos/u-6079a96e44dd214f025b844c78a5e0b511117869/MyFiles/loopstudios-landing-page-main/images/mobile/image-night-arcade-mob.jpg'),linear-gradient(90deg,var(--White),var(--White));
+    background-position:contain;
+    background-size:100%;
+}
+.gd2:hover,.gd2 a{
+    background-blend-mode:overlay;
+    color:var(--black);
+}
+.gd3{
+    background-image:url('file:///home/chronos/u-6079a96e44dd214f025b844c78a5e0b511117869/MyFiles/loopstudios-landing-page-main/images/mobile/image-soccer-team-mob.jpg'),linear-gradient(90deg,var(--White),var(--White));
+    background-position:cover;
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+.gd3:hover,.gd3 a{
+    background-blend-mode:overlay;
+    color:var(--black);
+}
+.gd4{
+    background-image:url('file:///home/chronos/u-6079a96e44dd214f025b844c78a5e0b511117869/MyFiles/loopstudios-landing-page-main/images/mobile/image-grid-mob.jpg'),linear-gradient(90deg,var(--White),var(--White));
+    background-position:cover;
+    background-size:100%;
+}
+.gd4:hover,.gd4 a{
+    background-blend-mode:overlay;
+    color:var(--black);
+}
+.gd5{
+    background-image:url('file:///home/chronos/u-6079a96e44dd214f025b844c78a5e0b511117869/MyFiles/loopstudios-landing-page-main/images/mobile/image-from-above-mob.jpg'),linear-gradient(90deg,var(--White),var(--White));
+    background-position:cover;
+    background-size:100%;
+}
+.gd5:hover,.gd5 a{
+    color:var(--black);
+    background-blend-mode:overlay;
+
+}
+.gd6{
+    background-image:url('file:///home/chronos/u-6079a96e44dd214f025b844c78a5e0b511117869/MyFiles/loopstudios-landing-page-main/images/mobile/image-pocket-borealis-mob.jpg'),linear-gradient(90deg,var(--White),var(--White));
+    background-position:cover;
+    background-size:100%;
+}
+.gd6:hover,.gd6 a{
+    color:var(--black);
+    background-blend-mode:overlay;
+    
+}
+.gd7{
+    background-image:url('file:///home/chronos/u-6079a96e44dd214f025b844c78a5e0b511117869/MyFiles/loopstudios-landing-page-main/images/mobile/image-curiosity-mob.jpg'),linear-gradient(90deg,var(--White),var(--White));
+    background-position:cover;
+    background-size:100%;
+}
+.gd7:hover,.gd7 a{
+    color:var(--black);
+    background-blend-mode:overlay;
+}
+.gd8{
+    background-image:url('file:///home/chronos/u-6079a96e44dd214f025b844c78a5e0b511117869/MyFiles/loopstudios-landing-page-main/images/mobile/image-fisheye-mob.jpg'),linear-gradient(90deg,var(--White),var(--White));
+    background-position:cover;
+    background-size:100%;
+}
+.gd8:hover,
+.gd8 a{
+   color:var(--black) !important;
+   background-blend-mode:overlay;
+}
+
+footer{
+    margin-top:35em;
+    height:20rem;
+    display:flex;
+    justify-content:center;
+    background:black;
+}
+
+.inner-container,
+.lower{
+    
+    text-align:center;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    color:var(--Dark-Gray);
+}
+
+.icon{
+    padding-left:20px;
+}
+
+
+.social__icons{
+    position:absolute;
+
+    top:10.5em;
+
+    color:var(--White);
+}
+.lower ul{
+    display:flex;
+    flex-direction:column;
+}
+.lower p{
+    margin-top:4.5em;
+}
+
+li >.lower_icon{
+
+    margin:10px 0;
+    position:relative;
+    color:var(--White);
+    font-family:'alata', sans-serif;
+    padding:0;
+}
+
+@media (min-width:750px){
+    body{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-image:url('file:///home/chronos/u-6079a96e44dd214f025b844c78a5e0b511117869/MyFiles/loopstudios-landing-page-main/images/desktop/image-hero-desk.jpg') ;
+    background-repeat:no-repeat;
+     background-size:100% 650px;
+    width:100%;
+}
+    
+    
+    .list{
+        display:block;      
+}
+    .list li{
+     font-size:20px;   
+     padding-left:0.5em;
+    }
+    .menu{
+        display:none;
+    }
+    .header{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom:6em ; 
+    width:80%; 
+
+
+}
+    nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1.5em 0;
+    width:100%;
+
+}
+    .nav__bar{
+    display:flex;
+    width:100%;
+}
+    .header__info{
+    align-self:flex-start;
+    font-family:'josefin sans',sans serif;
+    display:grid;
+    place-items:center;
+    height:250px;
+    font-size:2.5em;    
+    color:var(--White);
+    text-transform:uppercase;
+    width:55%;
+    margin-top:1.81em;
+    padding:0.36em;
+    border:2px solid var(--White);
+
+}
+    .main-container{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    Font-size: 15px;
+    width:100%;
+}
+
+.container{
+    width:80%;
+
+}
+    header{
+     margin-bottom:1.5em;
+    }
+
+.hero{
+    position:relative;
+    padding:18em 0;
+    background-image:url('file:///home/chronos/u-6079a96e44dd214f025b844c78a5e0b511117869/MyFiles/loopstudios-landing-page-main/images/desktop/image-interactive-desk.jpg');
+    background-size:76% 100%;
+    background-repeat:no-repeat;
+    background-position:cover;
+}
+.hero__info h1{
+    padding:2rem 0 1.5rem 0;
+}
+
+.hero__info{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:40%;
+    background-color:white;
+    padding:0 0 .5rem 4rem;
+}
+  
+.grid-header{
+    display:flex;
+
+    padding-bottom:2em;
+}
+.grid-header p{
+    font-family:'josefin sans', sans serif;
+    text-transform:uppercase;
+    font-weight:100;
+    font-size:1rem;
+    letter-spacing:.2rem;
+}
+.grid-header a{
+    border:1px solid black;
+    font-size:1em;
+    text-align:center;
+    text-transform:uppercase;
+    padding:1em 1.5em;
+    color:black;
+    
+}
+
+.grid-header a:hover{
+    background:black;
+    color:white;
+    font-family:'josefin sans', sans serif;
+}
+.grid {
+    display:grid;
+    width:100%;
+    height:28rem;
+    grid-gap:20px;
+    justify-content:center;
+    align-items:end;
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:repeat(2,1fr);
+    grid-template-areas: "gd1 gd2 gd3 gd4"
+                         "gd5 gd6 gd7 gd8";
+    margin-bottom:.2em;
+}
+
+.grid__item {
+    display:flex;
+    padding:0 0 20px 20px;
+    align-items:flex-end;
+    width:100%;
+    height:13em;
+    align-self:end;
+    text-transform:uppercase;
+    font-family:'josefin sans',sans-serif;
+    color:white;
+    font-size:20px;
+}
+h5{
+    z-index:100;
+}
+.gd1{
+    background:url('file:///home/chronos/u-6079a96e44dd214f025b844c78a5e0b511117869/MyFiles/loopstudios-landing-page-main/images/desktop/image-deep-earth-desk.jpg'),linear-gradient(90deg,var(--White),var(--White));
+    background-position:contain;
+    background-size:100%;
+    background-repeat:no-repeat;
+
+}
+
+.gd1:hover,.gd1 a{
+    background-blend-mode:overlay;
+    color:var(--black);
+
+}
+
+.gd2{
+    background-image:url('file:///home/chronos/u-6079a96e44dd214f025b844c78a5e0b511117869/MyFiles/loopstudios-landing-page-main/images/desktop/image-night-arcade-desk.jpg'),linear-gradient(90deg,var(--White),var(--White));
+    background-position:contain;
+    background-size:100%;
+}
+.gd2:hover,.gd2 a{
+    background-blend-mode:overlay;
+    color:var(--black);
+}
+.gd3{
+    background-image:url('file:///home/chronos/u-6079a96e44dd214f025b844c78a5e0b511117869/MyFiles/loopstudios-landing-page-main/images/desktop/image-soccer-team-desk.jpg'),linear-gradient(90deg,var(--White),var(--White));
+    background-position:cover;
+    background-repeat:no-repeat;
+    background-size:100%;
+}
+.gd3:hover,.gd3 a{
+    background-blend-mode:overlay;
+    color:var(--black);
+}
+.gd4{
+    background-image:url('file:///home/chronos/u-6079a96e44dd214f025b844c78a5e0b511117869/MyFiles/loopstudios-landing-page-main/images/desktop/image-grid-desk.jpg'),linear-gradient(90deg,var(--White),var(--White));
+    background-position:cover;
+    background-size:100%;
+}
+.gd4:hover,.gd4 a{
+    background-blend-mode:overlay;
+    color:var(--black);
+}
+.gd5{
+    background-image:url('file:///home/chronos/u-6079a96e44dd214f025b844c78a5e0b511117869/MyFiles/loopstudios-landing-page-main/images/desktop/image-from-above-desk.jpg'),linear-gradient(90deg,var(--White),var(--White));
+    background-position:cover;
+    background-size:100%;
+}
+.gd5:hover,.gd5 a{
+    color:var(--black);
+    background-blend-mode:overlay;
+
+}
+.gd6{
+    background-image:url('file:///home/chronos/u-6079a96e44dd214f025b844c78a5e0b511117869/MyFiles/loopstudios-landing-page-main/images/desktop/image-pocket-borealis-desk.jpg'),linear-gradient(90deg,var(--White),var(--White));
+    background-position:cover;
+    background-size:100%;
+}
+.gd6:hover,.gd6 a{
+    color:var(--black);
+    background-blend-mode:overlay;
+    
+}
+.gd7{
+    background-image:url('file:///home/chronos/u-6079a96e44dd214f025b844c78a5e0b511117869/MyFiles/loopstudios-landing-page-main/images/desktop/image-curiosity-desk.jpg'),linear-gradient(90deg,var(--White),var(--White));
+    background-position:cover;
+    background-size:100%;
+}
+.gd7:hover,.gd7 a{
+    color:var(--black);
+    background-blend-mode:overlay;
+}
+.gd8{
+    background-image:url('file:///home/chronos/u-6079a96e44dd214f025b844c78a5e0b511117869/MyFiles/loopstudios-landing-page-main/images/desktop/image-fisheye-desk.jpg'),linear-gradient(90deg,var(--White),var(--White));
+    background-position:cover;
+    background-size:100%;
+}
+.gd8:hover,
+.gd8 a{
+   color:var(--black) !important;
+   background-blend-mode:overlay;
+}
+
+
+footer{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    margin-top:20em;
+    width:100%;
+    background:black;
+    
+}
+.inner-container,
+.lower{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:space-between;
+    height:60px;
+    color:var(--Dark-Gray);
+    }
+    .inner-container .logo{
+    
+    }
+
+.icon{
+    padding-left:30px;
+}
+
+
+.social__icons {
+    position:absolute;
+    right:0;
+    top:0;
+    color:var(--White);
+}.social__icons .icon{
+    position:relative;
+    color:var(--White);
+    
+}
+.social__icons .icon:hover:after{
+    content:'';
+    text-align:center;
+    position:absolute;
+    bottom:-8px;
+    left:44%;
+    background-color:white;
+    width:60%;
+    height:2px;
+}
+    .lower ul{
+        flex-direction:row;
+        
+    }
+.lower_icon{
+    position:absolute;
+    left:0;
+    top:0;
+    color:var(--White);
+    font-family:'alata', sans-serif;
+    padding:0;
+}
+.lower_icon:hover:after{
+    content:'';
+    position:absolute;
+    bottom:-2px;
+    left:24%;
+    background-color:white;
+    width:50%;
+    height:2px;
+}
+a{
+    color:white;
+}
+    li >.lower_icon{
+        padding-right:10px;
+    }
+
+}
